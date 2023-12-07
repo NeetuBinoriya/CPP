@@ -8,13 +8,19 @@ public:
     float salary;
     string name;
     // Parameterised Constructor is a type of method
-    Employee(int eid, float s, string n)
+    // Employee(int eid, float s, string n)
+    // {
+    //     empid = eid;
+    //     salary = s;
+    //     name = n;
+    // }
+    //Example for Global Variable Same name Using in Constructor
+Employee(int empid, float salary, string name)
     {
-        empid = eid;
-        salary = s;
-        name = n;
+       this->empid = empid;
+        this->salary = salary;
+        this->name = name;
     }
-
 public:
     void print()
     {
